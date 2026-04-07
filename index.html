@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Page Navigator</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+        .controls {
+            margin: 20px;
+            font-size: 40px;
+            cursor: pointer;
+        }
+        iframe {
+            width: 100%;
+            height: 95vh;
+            border: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<div style="display: none;">
+    <span class="controls" onclick="prevPage()">⬅️</span>
+    <span class="controls" onclick="nextPage()">➡️</span>
+</div>
+
+<iframe id="frame"></iframe>
+
+<script>
+    // JSON list of pages
+    const pages = [
+        { "url": "slide1.html" },
+        { "url": "slide2.html" },
+        { "url": "slide3.html" },
+        { "url": "slide4.html" },
+        { "url": "slide5.html" },
+    ];
+
+    let currentIndex = 0;
+
+    function loadPage() {
+        document.getElementById("frame").src = pages[currentIndex].url;
+    }
+
+    function nextPage() {
+        if (currentIndex < pages.length - 1) {
+            currentIndex++;
+            loadPage();
+        }
+    }
+
+    function prevPage() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            loadPage();
+        }
+    }
+
+    // ✅ Keyboard arrow support
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "ArrowRight") {
+            nextPage();   // ➡️
+        } else if (event.key === "ArrowLeft") {
+            prevPage();   // ⬅️
+        }
+    });
+
+    // Load first page initially
+    loadPage();
+</script>
+
+</body>
+</html>

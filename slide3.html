@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>What Cloud Engineers Actually Do</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            width: 1280px;
+            min-height: 720px;
+            overflow: hidden;
+            position: relative;
+            background-color: white;
+            color: #333;
+        }
+        .slide {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+            display: flex;
+        }
+        .left-panel {
+            width: 32%;
+            background-color: #0784ba;
+            position: relative;
+            min-height: 720px;
+            padding: 40px;
+        }
+        .right-panel {
+            width: 68%;
+            padding: 40px 50px;
+            position: relative;
+            background-color: #f8fafc;
+        }
+        .logo {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .logo-icon {
+            color: #1e997c;
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        .page-number {
+            position: absolute;
+            top: 40px;
+            right: 50px;
+            font-size: 16px;
+            color: #1e997c;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #0784ba;
+            line-height: 1.2;
+            padding-right: 120px;
+        }
+        .responsibility-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .responsibility-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            border-left: 4px solid #1e997c;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .responsibility-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #0784ba;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .responsibility-desc {
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+        }
+        .icon-circle {
+            width: 28px;
+            height: 28px;
+            background: #1e997c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        .icon-circle i {
+            color: white;
+            font-size: 12px;
+        }
+        .side-label {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 2px;
+            padding: 20px 0;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%) rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+<div class="slide">
+<div class="left-panel">
+<div class="logo">
+<i class="fas fa-cloud logo-icon"></i>
+<div>
+<div style="font-size: 18px;">AZURE CLOUD</div>
+<div style="font-size: 12px; color: rgba(255,255,255,0.8);">Engineer Program</div>
+</div>
+</div>
+<div style="margin-top: 60px;">
+<div style="font-size: 36px; font-weight: 700; color: white; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">
+                    What Cloud<br/>Engineers<br/><span style="color: #1e997c;">Actually Do</span>
+</div>
+<p style="font-size: 14px; color: rgba(255,255,255,0.9); line-height: 1.6; margin-top: 30px;">
+                    Not just build — operate. Deploy, scale, secure, monitor, and fix when it breaks at 2 AM.
+                </p>
+</div>
+<div class="side-label">
+                CLOUD ENGINEERING
+            </div>
+</div>
+<div class="right-panel">
+<div class="page-number">03</div>
+<div class="section-title">What Cloud Engineers Actually Do</div>
+<div class="responsibility-grid">
+<div class="responsibility-card">
+<div class="responsibility-title">
+<div class="icon-circle"><i class="fas fa-rocket"></i></div>
+<span>Deploy</span>
+</div>
+<div class="responsibility-desc">
+                        Deploy real applications reliably using Azure App Service, AKS, and Functions. Handle infrastructure provisioning and configuration.
+                    </div>
+</div>
+<div class="responsibility-card">
+<div class="responsibility-title">
+<div class="icon-circle"><i class="fas fa-expand-arrows-alt"></i></div>
+<span>Scale</span>
+</div>
+<div class="responsibility-desc">
+                        Scale and harden applications with autoscaling, networking, and policies. Design for high availability and fault tolerance.
+                    </div>
+</div>
+<div class="responsibility-card">
+<div class="responsibility-title">
+<div class="icon-circle"><i class="fas fa-shield-alt"></i></div>
+<span>Secure</span>
+</div>
+<div class="responsibility-desc">
+                        Secure with IAM, Managed Identity, Key Vault, and firewalls. Implement least privilege access and encryption.
+                    </div>
+</div>
+<div class="responsibility-card">
+<div class="responsibility-title">
+<div class="icon-circle"><i class="fas fa-chart-line"></i></div>
+<span>Monitor</span>
+</div>
+<div class="responsibility-desc">
+                        Monitor production systems with Azure Monitor, Log Analytics, and App Insights. Set up alerts and SLOs.
+                    </div>
+</div>
+<div class="responsibility-card">
+<div class="responsibility-title">
+<div class="icon-circle"><i class="fas fa-wrench"></i></div>
+<span>Fix at 2 AM</span>
+</div>
+<div class="responsibility-desc">
+                        Fix when it breaks at 2 AM with incident response, runbooks, and troubleshooting. Be the person companies depend on.
+                    </div>
+</div>
+<div class="responsibility-card">
+<div class="responsibility-title">
+<div class="icon-circle"><i class="fas fa-cogs"></i></div>
+<span>Design</span>
+</div>
+<div class="responsibility-desc">
+                        Design for reliability, cost optimization, and resilience. Architect solutions that scale with business needs.
+                    </div>
+</div>
+</div>
+<div style="margin-top: 25px; padding: 15px; background: #e6f3f7; border-radius: 8px; border-left: 4px solid #0784ba;">
+<p style="font-size: 13px; color: #333; margin: 0;">
+<strong>Key Insight:</strong> The people growing fastest today are not the best coders — they are the ones who understand Infrastructure + Cloud + Systems thinking.
+                </p>
+</div>
+</div>
+</div>
+</body>
+</html>
